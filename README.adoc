@@ -1,0 +1,4 @@
+# Sarradar RPG
+
+This project aims to draw down data from content spreadsheets and use that to populate items in a LaTeX document that gets compiled to PDF.
+

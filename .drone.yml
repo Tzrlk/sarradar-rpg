@@ -1,0 +1,27 @@
+name: sarradar-rpg
+kind: pipeline
+
+steps:
+
+  - name:  prepare
+    image: ruby:2.5
+#    volumes:
+#      - name: ruby-cache
+#        path: ~/.gem/ruby/2.5.0
+    commands:
+      - gem install bundler -v 1.17.3
+      - bundle install
+      - bundle exec rake render
+
+#  - name:  compile
+#    image: latex
+#    volumes:
+#      - name: latex-cache
+#        path: ???
+#    commands:
+#      - pdflatex ???
+
+#volumes:
+#  - name: ruby-cache
+#    temp: {}
+

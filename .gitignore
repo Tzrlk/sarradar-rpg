@@ -1,0 +1,9 @@
+*.log
+
+# Ruby
+*.lock
+
+# Build
+.env
+credentials.json
+
